@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevStore</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #f4f1ea; color: #222; }
+.topbar { background: #1d4e89; color: #fff; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; }
+.topbar h1 { margin: 0; font-size: 28px; }
+.topbar nav a { color: #cfe0f5; margin-left: 24px; text-decoration: none; font-size: 16px; }
+#products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 40px; max-width: 1200px; margin: 0 auto; }
+.product-card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 24px; text-align: center; }
+.product-img { font-size: 64px; margin-bottom: 12px; }
+.product-title { font-size: 20px; margin: 0 0 12px; }
+.product-price { display: block; font-size: 26px; font-weight: bold; color: #1d4e89; }
+.stock { color: #2e7d32; font-size: 15px; margin: 10px 0 0; }
+footer { text-align: center; color: #888; padding: 30px; font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>DevStore</h1>
+    <nav><a href="#">Inicio</a><a href="#">Ofertas</a><a href="#">Contacto</a></nav>
+  </div>
+  <div id="products">
+    <div class="product-card">
+      <div class="product-img">⌨️</div>
+      <h2 class="product-title">Teclado mecánico K7</h2>
+      <span class="product-price">89,99 €</span>
+      <p class="stock">En stock</p>
+    </div>
+    <div class="product-card">
+      <div class="product-img">🖱️</div>
+      <h2 class="product-title">Ratón ergonómico M3</h2>
+      <span class="product-price">45,50 €</span>
+      <p class="stock">Últimas unidades</p>
+    </div>
+    <div class="product-card">
+      <div class="product-img">🖥️</div>
+      <h2 class="product-title">Monitor 27'' QHD</h2>
+      <span class="product-price">279,00 €</span>
+      <p class="stock">En stock</p>
+    </div>
+    <div class="product-card">
+      <div class="product-img">📷</div>
+      <h2 class="product-title">Webcam 4K Pro</h2>
+      <span class="product-price">129,90 €</span>
+      <p class="stock">Agotado</p>
+    </div>
+  </div>
+  <footer>DevStore · tienda de demostración de AlwaysInDev</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevStore</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #0e0e12; color: #f2f2f5; }
+header { padding: 28px 48px; border-bottom: 1px solid #26262e; display: flex; align-items: baseline; gap: 16px; }
+header h1 { margin: 0; font-size: 30px; letter-spacing: -0.02em; }
+header p { margin: 0; color: #8b8b99; }
+main { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+.catalog { display: flex; flex-direction: column; gap: 14px; }
+.item { background: #17171e; border: 1px solid #2a2a35; border-radius: 16px; padding: 22px 28px; }
+.item-body { display: grid; grid-template-columns: 140px 1fr auto; align-items: center; gap: 24px; }
+.item-cost { font-size: 28px; font-weight: 700; color: #7cf0b0; }
+.item-name { margin: 0; font-size: 22px; font-weight: 600; }
+.availability { color: #8b8b99; font-size: 15px; }
+.promo { background: linear-gradient(90deg, #ff4f8b, #ffb347); color: #111; border-radius: 12px; padding: 16px 24px; margin-bottom: 24px; font-weight: 700; font-size: 20px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>DevStore</h1>
+    <p>Nuevo diseño · otoño 2026</p>
+  </header>
+  <main>
+    <section class="catalog">
+      <article class="item">
+        <div class="item-body">
+          <span class="item-cost">74,99 €</span>
+          <h3 class="item-name">Teclado mecánico K7</h3>
+          <small class="availability">En stock</small>
+        </div>
+      </article>
+      <article class="item">
+        <div class="item-body">
+          <span class="item-cost">39,00 €</span>
+          <h3 class="item-name">Ratón ergonómico M3</h3>
+          <small class="availability">Últimas unidades</small>
+        </div>
+      </article>
+      <article class="item">
+        <div class="item-body">
+          <span class="item-cost">279,00 €</span>
+          <h3 class="item-name">Monitor 27'' QHD</h3>
+          <small class="availability">En stock</small>
+        </div>
+      </article>
+      <article class="item">
+        <div class="item-body">
+          <span class="item-cost">129,90 €</span>
+          <h3 class="item-name">Webcam 4K Pro</h3>
+          <small class="availability">Agotado</small>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
